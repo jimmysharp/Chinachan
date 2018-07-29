@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/program_list_fragment"
         android:name="io.github.jimmysharp.chinachan.ui.top.ProgramListFragment"
-        android:label="@string/app_name"
+        android:label="@string/title_program_list"
         tools:layout="@layout/program_list_fragment" >
         <action
             android:id="@+id/action_program_list_fragment_show_program"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/search_fragment"
         android:name="io.github.jimmysharp.chinachan.ui.top.SearchFragment"
-        android:label="@string/app_name"
+        android:label="@string/title_search"
         tools:layout="@layout/search_fragment" >
         <action
             android:id="@+id/action_search_fragment_show_program"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/reservation_list_fragment"
         android:name="io.github.jimmysharp.chinachan.ui.top.ReservationListFragment"
-        android:label="@string/app_name"
+        android:label="@string/title_reservation_list"
         tools:layout="@layout/reservation_list_fragment" >
         <action
             android:id="@+id/action_reservation_list_fragment_show_reserved"
@@ -38,7 +38,7 @@
     <fragment
         android:id="@+id/record_list_fragment"
         android:name="io.github.jimmysharp.chinachan.ui.top.RecordListFragment"
-        android:label="@string/app_name"
+        android:label="@string/title_record_list"
         tools:layout="@layout/record_list_fragment" >
         <action
             android:id="@+id/action_record_list_fragment_show_recording"
