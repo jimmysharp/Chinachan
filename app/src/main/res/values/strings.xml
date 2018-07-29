@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Chinachan</string>
+    <string name="title_program_list">Program</string>
+    <string name="title_search">Search</string>
+    <string name="title_reservation_list">Reservation</string>
+    <string name="title_record_list">Record</string>
+    <string name="title_program">Program Detail</string>
+    <string name="title_reserve_rule">Reserve Rule</string>
+    <string name="title_reserved">Reserved Program</string>
+    <string name="title_recording">Recording Program</string>
+    <string name="title_recorded">Recorded Program</string>
+    <string name="title_setting">Setting</string>
+</resources>
