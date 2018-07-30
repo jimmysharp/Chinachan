@@ -6,16 +6,51 @@
     app:startDestination="@id/top_fragment">
 
     <fragment
-        android:id="@+id/setting_fragment"
-        android:name="io.github.jimmysharp.chinachan.ui.setting.SettingFragment"
-        android:label="@string/title_setting"
-        tools:layout="@layout/setting_fragment" />
-    <fragment
         android:id="@+id/top_fragment"
         android:name="io.github.jimmysharp.chinachan.ui.top.TopFragment"
         android:label="@string/app_name" >
         <action
             android:id="@+id/action_top_fragment_show_setting"
             app:destination="@id/setting_fragment" />
+        <action
+            android:id="@+id/action_top_fragment_show_program"
+            app:destination="@id/program_fragment" />
+        <action
+            android:id="@+id/action_top_fragment_show_reserved"
+            app:destination="@id/reserved_fragment" />
+        <action
+            android:id="@+id/action_top_fragment_show_reserve_rule"
+            app:destination="@id/reserve_rule_fragment" />
+        <action
+            android:id="@+id/action_top_fragment_show_recording"
+            app:destination="@id/recording_fragment" />
+        <action
+            android:id="@+id/action_top_fragment_show_recorded"
+            app:destination="@id/recorded_fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/setting_fragment"
+        android:name="io.github.jimmysharp.chinachan.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/setting_fragment" />
+    <fragment
+        android:id="@+id/program_fragment"
+        android:name="io.github.jimmysharp.chinachan.ui.program.ProgramFragment"
+        android:label="@string/title_program" />
+    <fragment
+        android:id="@+id/reserved_fragment"
+        android:name="io.github.jimmysharp.chinachan.ui.reservation.ReservedFragment"
+        android:label="@string/title_reserved" />
+    <fragment
+        android:id="@+id/reserve_rule_fragment"
+        android:name="io.github.jimmysharp.chinachan.ui.reservation.ReserveRuleFragment"
+        android:label="@string/title_reserve_rule" />
+    <fragment
+        android:id="@+id/recording_fragment"
+        android:name="io.github.jimmysharp.chinachan.ui.record.RecordingFragment"
+        android:label="@string/title_recording" />
+    <fragment
+        android:id="@+id/recorded_fragment"
+        android:name="io.github.jimmysharp.chinachan.ui.record.RecordedFragment"
+        android:label="@string/title_recorded" />
 </navigation>

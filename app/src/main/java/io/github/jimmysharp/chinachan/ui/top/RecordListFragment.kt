@@ -6,8 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.findNavController
 import io.github.jimmysharp.chinachan.R
 import io.github.jimmysharp.chinachan.databinding.RecordListFragmentBinding
 
@@ -24,10 +23,6 @@ class RecordListFragment : Fragment() {
                               savedInstanceState: Bundle?): View {
         binding = RecordListFragmentBinding.inflate(inflater, container, false)
 
-        binding.button.setOnClickListener { _ ->
-            findNavController().navigate(R.id.action_record_list_fragment_show_recording)
-        }
-
         return binding.root
     }
 
@@ -35,6 +30,10 @@ class RecordListFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(RecordListViewModel::class.java)
         // TODO: Use the ViewModel
+
+        binding.button.setOnClickListener { _ ->
+            activity!!.findNavController(R.id.main_nav_host).navigate(R.id.action_top_fragment_show_recording)
+        }
     }
 
 }
