@@ -34,6 +34,7 @@ dependencies {
     ext.constraint_version = '1.1.2'
     ext.rxjava_version = '2.1.17'
     ext.retrofit_version = '2.4.0'
+    ext.moshi_version = '1.6.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -54,6 +55,7 @@ dependencies {
     // architecture components
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
     implementation "android.arch.lifecycle:common-java8:$lifecycle_version"
+    implementation "android.arch.lifecycle:reactivestreams:$lifecycle_version"
     implementation "android.arch.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$navigation_version"
 
@@ -61,19 +63,16 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
-    implementation 'com.github.k-kagurazaka.rx-property-android:rx-property:4.0.0'
-    implementation 'com.github.k-kagurazaka.rx-property-android:rx-property-kotlin:4.0.0'
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
-    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.6.0'
+    implementation "com.squareup.moshi:moshi:$moshi_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
 
     // debug
     implementation 'com.jakewharton.timber:timber:4.7.0'
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
-    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 
     // test
     testImplementation 'junit:junit:4.12'
