@@ -1,5 +1,7 @@
 <resources>
+
     <string name="app_name">Chinachan</string>
+
     <string name="title_program_list">Program</string>
     <string name="title_search">Search</string>
     <string name="title_reservation_list">Reservation</string>
@@ -10,4 +12,11 @@
     <string name="title_recording">Recording Program</string>
     <string name="title_recorded">Recorded Program</string>
     <string name="title_setting">Setting</string>
+
+    <string name="setting_label_category_server">Server</string>
+    <string name="setting_label_host">host</string>
+    <string name="setting_label_user">user</string>
+    <string name="setting_label_password">password</string>
+    <string name="setting_label_register">register</string>
+
 </resources>
