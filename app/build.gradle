@@ -32,7 +32,7 @@ dependencies {
     ext.lifecycle_version = '1.1.1'
     ext.navigation_version = '1.0.0-alpha05'
     ext.constraint_version = '1.1.2'
-    ext.rxjava_version = '2.2.0'
+    ext.rxjava_version = '2.2.1'
     ext.retrofit_version = '2.4.0'
     ext.moshi_version = '1.6.0'
 
