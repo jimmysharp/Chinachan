@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.*
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupWithNavController
 import io.github.jimmysharp.chinachan.R
 
 import io.github.jimmysharp.chinachan.databinding.TopFragmentBinding
@@ -34,7 +34,7 @@ class TopFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(TopViewModel::class.java)
 
         val navController = (childFragmentManager.findFragmentById(R.id.top_nav_host) as NavHostFragment).navController
-        NavigationUI.setupWithNavController(binding.topBottomNavigation, navController)
+        binding.topBottomNavigation.setupWithNavController(navController)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {

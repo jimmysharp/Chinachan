@@ -3,11 +3,10 @@ package io.github.jimmysharp.chinachan
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import io.github.jimmysharp.chinachan.databinding.MainActivityBinding
-import io.github.jimmysharp.chinachan.ui.top.ProgramListFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.mainToolbar)
 
         val navController = findNavController(R.id.main_nav_host)
-        NavigationUI.setupWithNavController(binding.mainToolbar, navController)
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+        binding.mainToolbar.setupWithNavController(navController, appBarConfiguration)
     }
 
 }
