@@ -1,6 +1,6 @@
 package io.github.jimmysharp.chinachan.ui.record
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 
 class RecordedViewModel : ViewModel() {
     // TODO: Implement the ViewModel

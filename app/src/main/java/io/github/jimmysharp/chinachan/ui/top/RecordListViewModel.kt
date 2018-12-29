@@ -1,6 +1,6 @@
 package io.github.jimmysharp.chinachan.ui.top
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 
 class RecordListViewModel : ViewModel() {
     // TODO: Implement the ViewModel

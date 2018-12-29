@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.top.TopFragment">
@@ -20,7 +20,7 @@
             app:layout_constraintBottom_toTopOf="@id/top_bottom_navigation"
             app:navGraph="@navigation/navigation_top" />
 
-        <android.support.design.widget.BottomNavigationView
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/top_bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,6 +31,6 @@
             android:background="@color/colorBottomNavigation"
             app:menu="@menu/top_bottom_navigation" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

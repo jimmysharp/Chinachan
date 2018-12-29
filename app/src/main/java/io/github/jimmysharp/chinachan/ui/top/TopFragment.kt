@@ -1,8 +1,8 @@
 package io.github.jimmysharp.chinachan.ui.top
 
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.*
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -37,11 +37,11 @@ class TopFragment : Fragment() {
         binding.topBottomNavigation.setupWithNavController(navController)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater!!.inflate(R.menu.top_toolbar, menu)
+        inflater.inflate(R.menu.top_toolbar, menu)
 
-        val settingItem = menu!!.findItem(R.id.setting_fragment)
+        val settingItem = menu.findItem(R.id.setting_fragment)
         settingItem.setOnMenuItemClickListener{ _ ->
             findNavController().navigate(R.id.action_top_fragment_show_setting)
             true
